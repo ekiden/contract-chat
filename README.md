@@ -1,4 +1,4 @@
-# Dummy Ekiden contract
+# Chat Ekiden contract
 
 [![CircleCI](https://circleci.com/gh/ekiden/contract-dummy/tree/master.svg?style=svg)](https://circleci.com/gh/ekiden/contract-dummy/tree/master)
 
