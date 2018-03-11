@@ -4,7 +4,7 @@ package chat;
 
 message ChatState {
     string name = 1;
-    repeated Struct messages = 2;
+    repeated Snippet messages = 2;
 }
 
 message AddMessageRequest {
@@ -26,9 +26,14 @@ message CreateResponse {
 }
 
 message FetchMessagesRequest {
-    uint64 index = 1;
+    uint32 index = 1;
 }
 
 message FetchMessagesResponse {
-    repeated Struct messages = 1;
+    repeated Snippet messages = 1;
+}
+
+message Snippet {
+    string sender = 1;
+    string content = 2;
 }

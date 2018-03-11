@@ -1,15 +1,15 @@
 [package]
-name = "dummy"
+name = "chat"
 version = "0.1.0"
-authors = ["Jernej Kos <jernej@kos.mx>"]
+authors = ["Andrew Low <andrew.low@berkeley.edu>"]
 build = "build.rs"
 
 [lib]
-name = "dummy"
+name = "chat"
 crate-type = ["staticlib"]
 
 [dependencies]
-dummy-api = { path = "./api" }
+chat-api = { path = "./api" }
 ekiden-core-common = { path = "./ekiden/core/common" }
 ekiden-core-trusted = { path = "./ekiden/core/trusted" }
 protobuf = "1.4.3"
