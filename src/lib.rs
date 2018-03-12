@@ -39,7 +39,7 @@ fn add_message(request: &AddMessageRequest) -> Result<AddMessageResponse> {
             sender: request.get_sender().to_string(),
             content: request.get_content().to_string(),
         };
-
+        // Add check to make sure chat_name matches contract name!!
         contract.add_message(msg)?;
 
         Ok(())

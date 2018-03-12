@@ -58,5 +58,17 @@ where
     .wait()
     .unwrap();
 
-    //!!Returns a protobuf::Repeated Snippet that you have to parse and print
+    let response = response.get_messages();
+
+    for s in response {
+        let sender = s.get_sender();
+        let content = s.get_content();
+        println!("{}: {}", sender, content);
+    }
+}
+
+fn main() {
+    let mut client = contract_client!(chat);
+    init(&mut client, 1, 1);
+    scenario(&mut client);
 }

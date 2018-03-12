@@ -1,5 +1,6 @@
 # Build.
 /target/
+/bin/client/target/
 **/*.rs.bk
 *.a
 *.o
