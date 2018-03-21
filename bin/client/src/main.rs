@@ -43,8 +43,18 @@ where
     client.add_message({
         let mut request = AddMessageRequest::new();
         request.set_chat_name("MyChat1".to_string());
-        request.set_sender("andy".to_string());
+        request.set_sender("jessica".to_string());
         request.set_content("Never make major decisions when you're reeling from a loss".to_string());
+        request
+    })
+    .wait()
+    .unwrap();
+
+    client.add_message({
+        let mut request = AddMessageRequest::new();
+        request.set_chat_name("MyChat1".to_string());
+        request.set_sender("harvey".to_string());
+        request.set_content("If your back's against the wall, break down the goddamn wall".to_string());
         request
     })
     .wait()
